@@ -20,16 +20,16 @@ function EmailForm() {
     setStatus('loading');
     
     try {
-      // Google Apps Script URL for OLIGO email collection
       const formData = new FormData();
       formData.append('email', email);
       
-      const response = await fetch('https://script.google.com/macros/s/AKfycbzjkA4HSFB980VciZm4FTvJNLL79re3egD4_8OilIkgkKuPMUvZOShHEj70cguq046S/exec', {
+      const scriptUrl = 'https://script.google.com/macros/s/AKfycbzjkA4HSFB980VciZm4FTvJNLL79re3egD4_8OilIkgkKuPMUvZOShHEj70cguq046S/exec';
+      
+      const response = await fetch(scriptUrl, {
         method: 'POST',
         body: formData
       });
 
-      // Check if the request was successful
       if (response.ok) {
         setStatus('success');
         setMessage('Thank you! You\'ll be notified when OLIGO launches.');
@@ -82,7 +82,12 @@ function EmailForm() {
 
 export default function ComingSoon(): JSX.Element {
   return (
-    <main className="relative min-h-screen w-full overflow-hidden bg-black text-white" style={{backgroundImage: "url('/oligo-brand-illustration.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
+    <main className="relative min-h-screen w-full overflow-hidden bg-black text-white" style={{
+      backgroundImage: "url('/oligo-brand-illustration.png')",
+      backgroundSize: "2000px auto",
+      backgroundRepeat: "repeat-x",
+      animation: "slideBackground 25s linear infinite"
+    }}>
       {/* Dark overlay for better text readability */}
       <div className="pointer-events-none absolute inset-0 bg-black/80" />
       
@@ -118,8 +123,6 @@ export default function ComingSoon(): JSX.Element {
 
         {/* Email capture (Google Sheets) */}
         <EmailForm />
-
-
 
         {/* Socials + Contact */}
         <div className="mt-2 flex items-center gap-3">

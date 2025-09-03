@@ -22,3 +22,13 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* OLIGO background animation - seamless pixel movement */
+@keyframes slideBackground {
+  0% {
+    background-position: 0px center;
+  }
+  100% {
+    background-position: -2000px center;
+  }
+}
+

@@ -128,38 +128,62 @@ export default function ComingSoon(): JSX.Element {
         {/* Socials + Contact */}
         <div className="mt-2 flex items-center gap-3">
           {/* Update these hrefs with your real profiles */}
-          <a
-            href="#"
-            aria-label="Instagram"
-            className="group inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/25 ring-1 ring-white/40 hover:bg-white/40 hover:ring-white/60 transition-all duration-200 shadow-md backdrop-blur-sm"
-          >
-            {/* Instagram SVG */}
-            <svg viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-white group-hover:stroke-white" strokeWidth="2">
-              <rect x="3" y="3" width="18" height="18" rx="5" />
-              <circle cx="12" cy="12" r="4" />
-              <circle cx="17.5" cy="6.5" r="1" className="fill-white stroke-none" />
-            </svg>
-          </a>
-          <a
-            href="#"
-            aria-label="X (Twitter)"
-            className="group inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/25 ring-1 ring-white/40 hover:bg-white/40 hover:ring-white/60 transition-all duration-200 shadow-md backdrop-blur-sm"
-          >
-            {/* X/Twitter SVG */}
-            <svg viewBox="0 0 24 24" className="h-5 w-5 fill-white group-hover:fill-white" aria-hidden="true">
-              <path d="M18.9 3H21l-7.4 8.5L21.5 21h-3.7l-6-7.1-6.7 7.1H2.1l7.9-8.5L2 3h3.8l5.4 6.4L18.9 3z" />
-            </svg>
-          </a>
-          <a
-            href="#"
-            aria-label="TikTok"
-            className="group inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/25 ring-1 ring-white/40 hover:bg-white/40 hover:ring-white/60 transition-all duration-200 shadow-md backdrop-blur-sm"
-          >
-            {/* TikTok SVG */}
-            <svg viewBox="0 0 24 24" className="h-5 w-5 fill-white group-hover:fill-white" aria-hidden="true">
-              <path d="M14 3c.5 2.6 2.1 4.7 4.9 5v3.1c-1.6 0-3-.4-4.3-1.2v4.9c0 3-2.4 5.2-5.5 5.2S3.5 17.8 3.5 15c0-3 2.4-5.2 5.5-5.2.5 0 1 .1 1.5.2v3.2c-.4-.2-.9-.3-1.5-.3-1.5 0-2.7 1.1-2.7 2.6s1.2 2.6 2.7 2.6 2.7-1.2 2.7-2.7V3h2.3z" />
-            </svg>
-          </a>
+          <div className="relative group">
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/25 ring-1 ring-white/40 hover:bg-white/40 hover:ring-white/60 transition-all duration-200 shadow-md backdrop-blur-sm"
+            >
+              {/* Instagram SVG */}
+              <svg viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-white group-hover:stroke-white" strokeWidth="2">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" className="fill-white stroke-none" />
+              </svg>
+            </a>
+            {/* Minimal tooltip */}
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+              <div className="text-xs text-white/80 bg-black/60 px-2 py-1 rounded backdrop-blur-sm whitespace-nowrap">
+                Coming Soon
+              </div>
+            </div>
+          </div>
+          <div className="relative group">
+            <a
+              href="#"
+              aria-label="X (Twitter)"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/25 ring-1 ring-white/40 hover:bg-white/40 hover:ring-white/60 transition-all duration-200 shadow-md backdrop-blur-sm"
+            >
+              {/* X/Twitter SVG */}
+              <svg viewBox="0 0 24 24" className="h-5 w-5 fill-white group-hover:fill-white" aria-hidden="true">
+                <path d="M18.9 3H21l-7.4 8.5L21.5 21h-3.7l-6-7.1-6.7 7.1H2.1l7.9-8.5L2 3h3.8l5.4 6.4L18.9 3z" />
+              </svg>
+            </a>
+            {/* Minimal tooltip */}
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+              <div className="text-xs text-white/80 bg-black/60 px-2 py-1 rounded backdrop-blur-sm whitespace-nowrap">
+                Coming Soon
+              </div>
+            </div>
+          </div>
+          <div className="relative group">
+            <a
+              href="#"
+              aria-label="TikTok"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/25 ring-1 ring-white/40 hover:bg-white/40 hover:ring-white/60 transition-all duration-200 shadow-md backdrop-blur-sm"
+            >
+              {/* TikTok SVG */}
+              <svg viewBox="0 0 24 24" className="h-5 w-5 fill-white group-hover:fill-white" aria-hidden="true">
+                <path d="M14 3c.5 2.6 2.1 4.7 4.9 5v3.1c-1.6 0-3-.4-4.3-1.2v4.9c0 3-2.4 5.2-5.5 5.2S3.5 17.8 3.5 15c0-3 2.4-5.2 5.5-5.2.5 0 1 .1 1.5.2v3.2c-.4-.2-.9-.3-1.5-.3-1.5 0-2.7 1.1-2.7 2.6s1.2 2.6 2.7 2.6 2.7-1.2 2.7-2.7V3h2.3z" />
+              </svg>
+            </a>
+            {/* Minimal tooltip */}
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+              <div className="text-xs text-white/80 bg-black/60 px-2 py-1 rounded backdrop-blur-sm whitespace-nowrap">
+                Coming Soon
+              </div>
+            </div>
+          </div>
           <a
             href="mailto:info@adaptive.kitchen"
             className="ml-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-black hover:bg-white/90 transition-all duration-200 shadow-md backdrop-blur-sm"

@@ -4,6 +4,13 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+// Get the base URL dynamically
+const baseUrl = process.env.VERCEL_URL 
+  ? `https://${process.env.VERCEL_URL}`
+  : process.env.NODE_ENV === 'development'
+  ? 'http://localhost:3000'
+  : 'https://www.oligo.co'
+
 export const metadata: Metadata = {
   title: 'OLIGO - Prebiotic Sweetener Coming Soon',
   description: 'Revolutionary prebiotic sweetener rooted in Korean kitchens, crafted for today\'s cooks. Sign up for early access to OLIGO.',
@@ -14,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'OLIGO - Revolutionary Prebiotic Sweetener Coming Soon',
     description: 'Revolutionary prebiotic sweetener rooted in Korean kitchens, crafted for today\'s cooks. Sign up for early access to OLIGO.',
-    url: 'https://www.oligo.co',
+    url: baseUrl,
     siteName: 'OLIGO',
     images: [
       {
-        url: 'https://www.oligo.co/oligo-brand-OG.png',
+        url: `${baseUrl}/oligo-brand-OG.png`,
         width: 1200,
         height: 630,
         alt: 'OLIGO - Prebiotic Sweetener Coming Soon',
@@ -33,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'OLIGO - Revolutionary Prebiotic Sweetener Coming Soon',
     description: 'Revolutionary prebiotic sweetener rooted in Korean kitchens, crafted for today\'s cooks. Sign up for early access.',
-    images: ['https://www.oligo.co/oligo-brand-OG.png'],
+    images: [`${baseUrl}/oligo-brand-OG.png`],
     creator: '@oligo',
   },
   

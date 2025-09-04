@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'OLIGO - Revolutionary Prebiotic Sweetener Coming Soon',
     description: 'Revolutionary prebiotic sweetener rooted in Korean kitchens, crafted for today\'s cooks. Sign up for early access to OLIGO.',
-    url: 'https://oligo-landing.vercel.app',
+    url: 'https://www.oligo.co',
     siteName: 'OLIGO',
     images: [
       {
-        url: '/oligo-brand-OG.png',
+        url: 'https://www.oligo.co/oligo-brand-OG.png',
         width: 1200,
         height: 630,
         alt: 'OLIGO - Prebiotic Sweetener Coming Soon',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'OLIGO - Revolutionary Prebiotic Sweetener Coming Soon',
     description: 'Revolutionary prebiotic sweetener rooted in Korean kitchens, crafted for today\'s cooks. Sign up for early access.',
-    images: ['/oligo-brand-OG.png'],
+    images: ['https://www.oligo.co/oligo-brand-OG.png'],
     creator: '@oligo',
   },
   

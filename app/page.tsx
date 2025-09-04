@@ -26,6 +26,7 @@ function EmailForm() {
       const scriptUrl = 'https://script.google.com/macros/s/AKfycbzjkA4HSFB980VciZm4FTvJNLL79re3egD4_8OilIkgkKuPMUvZOShHEj70cguq046S/exec';
       
       const response = await fetch(scriptUrl, {
+        
         method: 'POST',
         body: formData
       });

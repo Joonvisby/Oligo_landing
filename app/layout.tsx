@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   
   // Open Graph for social media
   openGraph: {
-    title: 'OLIGO - Revolutionary Prebiotic Sweetener Coming Soon',
-    description: 'Revolutionary prebiotic sweetener rooted in Korean kitchens, crafted for today\'s cooks. Sign up for early access to OLIGO.',
+    title: 'OLIGO - Prebiotic Sweetener from Plants Coming Soon',
+    description: 'Prebiotic sweetener from plants rooted in Korean kitchens, crafted for today\'s cooks. Sign up for early access to OLIGO.',
     url: baseUrl,
     siteName: 'OLIGO',
     images: [
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: 'OLIGO - Revolutionary Prebiotic Sweetener Coming Soon',
-    description: 'Revolutionary prebiotic sweetener rooted in Korean kitchens, crafted for today\'s cooks. Sign up for early access.',
+    title: 'OLIGO - Prebiotic Sweetener from Plants Coming Soon',
+    description: 'Prebiotic sweetener from plants rooted in Korean kitchens, crafted for today\'s cooks. Sign up for early access.',
     images: [`${baseUrl}/oligo-brand-OG.png`],
     creator: '@oligo',
   },

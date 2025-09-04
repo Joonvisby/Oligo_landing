@@ -4,12 +4,8 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// Get the base URL dynamically
-const baseUrl = process.env.VERCEL_URL 
-  ? `https://${process.env.VERCEL_URL}`
-  : process.env.NODE_ENV === 'development'
-  ? 'http://localhost:3000'
-  : 'https://www.oligo.co'
+// Use custom domain for OG tags to ensure image accessibility
+const baseUrl = 'https://www.oligo.co'
 
 export const metadata: Metadata = {
   title: 'OLIGO - Prebiotic Sweetener Coming Soon',

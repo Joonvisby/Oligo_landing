@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: 'OLIGO',
     images: [
       {
-        url: `${baseUrl}/oligo-brand-OG.png`,
+        url: `${baseUrl}/OG_IMAGE.png`,
         width: 1200,
         height: 630,
         alt: 'OLIGO - Prebiotic Sweetener Coming Soon',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'OLIGO - Prebiotic Sweetener from Plants Coming Soon',
     description: 'Prebiotic sweetener from plants rooted in Korean kitchens, crafted for today\'s cooks. Sign up for early access.',
-    images: [`${baseUrl}/oligo-brand-OG.png`],
+    images: [`${baseUrl}/OG_IMAGE.png`],
     creator: '@oligo',
   },
   

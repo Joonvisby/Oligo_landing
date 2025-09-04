@@ -11,9 +11,10 @@ export async function generateMetadata(): Promise<Metadata> {
   const host = headersList.get('host') || 'www.oligo.co'
   
   // Ensure we use the correct protocol and domain
+  // Use both oligo.co and www.oligo.co since social platforms might access either
   const baseUrl = host.includes('localhost') 
     ? `http://${host}` 
-    : `https://${host}`
+    : `https://oligo.co` // Use non-www for broader compatibility
 
   return {
     title: 'OLIGO - Prebiotic Sweetener Coming Soon',
